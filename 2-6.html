@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div{
+        width: 100px;
+        height: 50px;;
+        background-color: red;
+        font-weight: bold;
+        position: relative;
+        animation: mymove 10s;
+        animation-fill-mode: forwards;
+    }
+    #div1{animation-timing-function: linear;background-color: chocolate;}
+    #div2{
+        animation-timing-function: ease;
+        background-color: #fffbbb;
+    }
+    #div3{animation-timing-function: ease-in;}
+    #div4{animation-timing-function: ease-out;}
+    #div5{animation-timing-function: ease-in-out;}
+    @keyframes mymove {
+        from {left :0px;}
+        to{left:300px;}
+    }
+</style>
+<body>
+    <h1>Css animations</h1>
+    <div id="div1">linear</div>
+    <div id="div2">ease</div>
+    <div id="div3">ease-in</div>
+    <div id="div4">ease-out</div>
+    <div id="div5">ease-in-out</div>
+</body>
+</html>
